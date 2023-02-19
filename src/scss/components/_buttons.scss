@@ -1,0 +1,31 @@
+.btn {
+  max-width: 237px;
+  padding: 29px 39px;
+  border-radius: 16px;
+  background-color: var(--dark-blue-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--light-color);
+
+  &-yellow {
+    color: var(--dark-blue-color);
+    background-color: var(--yellow-color);
+  }
+
+  &-transparent {
+    border: 1px solid var(--dark-blue-color);
+    background-color: var(--light-color);
+    color: var(--dark-blue-color);
+  }
+
+  &-arrow {
+    margin-left: 10px;
+  }
+}
