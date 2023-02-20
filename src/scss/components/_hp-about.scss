@@ -1,20 +1,12 @@
 .hp-about {
   background-color: #F9F8F8;
+  background-image: url('../img/hp-about-back.png');
+  background-repeat: no-repeat;
 
   &__container {
     display: flex;
     justify-content: flex-end;
     padding: 185px var(--container-offset) 200px;
-    position: relative;
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-image: url('../img/hp-about-back.png');
-      z-index: 5;
-    }
   }
 
   &__content {

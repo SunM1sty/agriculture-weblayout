@@ -1,0 +1,114 @@
+.hp-shop {
+
+  &__container {
+    padding: 350px var(--container-offset) 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__heading {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: var(--green-color);
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    @include h2;
+  }
+
+  &__image {
+    background-blend-mode: multiply;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 20px;
+    margin-bottom: 120px;
+  }
+
+  &__item {
+    grid-column: 3 span;
+    background: #F9F8F8;
+    border-radius: 30px;
+    padding: 29px 25px 17px 30px;
+  }
+
+  &__tag {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--light-color);
+    padding: 6px 12px;
+    background-color: var(--dark-blue-color);
+    display: inline-block;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #274C5B;
+    text-align: left;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #DEDDDD;
+    margin-bottom: 8px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price {
+    display: flex;
+    align-items:last baseline;
+  }
+
+  &__prev-price {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #B8B8B8;
+    text-decoration: line-through;
+    margin-right: 6px;
+
+  }
+
+  &__act-price {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--dark-blue-color);
+  }
+
+  .btn {
+    align-self: center;
+  }
+}
