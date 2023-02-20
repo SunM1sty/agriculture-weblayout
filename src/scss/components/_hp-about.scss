@@ -1,0 +1,73 @@
+.hp-about {
+  background-color: #F9F8F8;
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 185px var(--container-offset) 200px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url('../img/hp-about-back.png');
+      z-index: 5;
+    }
+  }
+
+  &__content {
+    max-width: 702px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: var(--green-color);
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    @include h2;
+    margin-bottom: 15px;
+  }
+
+  &__descr {
+    max-width: 690px;
+    @include text;
+    margin-bottom: 45px;
+  }
+
+  &__list {
+    margin-bottom: 45px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.point-item {
+  max-width: 564px;
+
+  &__img {
+    margin-right: 20px;
+  }
+
+  &__title {
+    @include h6;
+  }
+
+  &__descr {
+    @include text;
+  }
+}

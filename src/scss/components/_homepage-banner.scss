@@ -1,0 +1,26 @@
+.hp-banner {
+  background-image: url('../img/hp-banner-back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__content {
+    max-width: 530px;
+    padding: 240px var(--container-offset);
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: var(--green-color);
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    @include h1;
+    margin-bottom: 25px;
+  }
+}

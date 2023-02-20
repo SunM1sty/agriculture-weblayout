@@ -1,0 +1,16 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/quotes";
+@import "./components/buttons";
+@import "./components/nav";
+@import "./components/newsletter";
+@import "./components/header";
+@import "./components/homepage-banner";
+@import "./components/off-banner";
+@import "./components/hp-about";
+

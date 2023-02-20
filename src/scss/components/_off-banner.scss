@@ -1,0 +1,51 @@
+.off-banner {
+
+  &__container {
+    padding: 150px var(--container-offset) 190px var(--container-offset);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px;
+  }
+
+  &__item {
+    grid-column: 6 span;
+    width: 100%;
+    padding: 109px 55px;
+    border-radius: 30px;
+
+    &:nth-child(1) {
+        background-image: url('../img/offer-1-back.jpg');
+        @include bg-cover;
+      }
+
+    &:nth-child(2) {
+      background-image: url('../img/offer-2-back.jpg');
+      @include bg-cover;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: var(--light-color);
+    margin-bottom: 5px;
+  }
+
+  &__descr {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 47px;
+    color: var(--light-color);
+    max-width: 220px;
+  }
+}
