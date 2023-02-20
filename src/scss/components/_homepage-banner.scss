@@ -1,11 +1,11 @@
 .hp-banner {
-  padding: 240px var(--container-offset);
   background-image: url('../img/hp-banner-back.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 
   &__content {
     max-width: 530px;
+    padding: 240px var(--container-offset);
   }
 
   &__subtitle {

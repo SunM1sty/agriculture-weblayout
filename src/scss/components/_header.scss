@@ -1,5 +1,7 @@
 .header {
   background: #FFFFFF;
+  position: sticky;
+  top: 0;
 
   &__container {
     padding: 69px var(--container-offset);
@@ -78,8 +80,4 @@
       margin-left: 12px;
     }
   }
-}
-
-body {
-  background-color: black;
 }
